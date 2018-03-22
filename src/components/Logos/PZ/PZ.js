@@ -1,11 +1,11 @@
 import React from 'react'
 
-const drawer = (props) => {
+const pz = (props) => {
   return (
     <div>
-      drawer
+      pz
     </div>
   )
 }
 
-export default drawer
+export default pz
