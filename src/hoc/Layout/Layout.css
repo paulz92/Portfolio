@@ -1,0 +1,5 @@
+/* min height to push footer down */
+.mainContent {
+  margin: 50px 0px 0px 0px;
+  min-height: calc(100vh - 116px);
+}

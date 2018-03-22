@@ -1,0 +1,36 @@
+.headerRoot {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #212121;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  border-bottom: 4px solid #007C91;
+  padding: 0 20px;
+  z-index: 90;
+}
+
+.headerContent {
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerRoot nav {
+  height: 100%;
+}
+
+.logoRoot {
+  height: 80%;
+}
+
+@media (max-width: 499px) {
+  .desktopNav {
+    display: none;
+  }
+}
