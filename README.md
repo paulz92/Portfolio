@@ -20,6 +20,6 @@ All pertinent content is currently being displayed on my v1 Portolio, [here](htt
 
 ## Contact Details
 
-Phone: (919) 268-0414
-Email: paulz92@gmail.com
-LinkedIn: [https://www.linkedin.com/in/paul-zavattieri-jr/](https://www.linkedin.com/in/paul-zavattieri-jr/)
+- Phone: (919) 268-0414
+- Email: paulz92@gmail.com
+- LinkedIn: [https://www.linkedin.com/in/paul-zavattieri-jr/](https://www.linkedin.com/in/paul-zavattieri-jr/)
