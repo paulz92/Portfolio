@@ -1,0 +1,15 @@
+.aboutWrap {
+  flex-grow: 1;
+  width: 100%;
+  background-image: url("../../assets/images/colorado.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrap {
+  width: 80%;
+  flex-grow: 1;
+}

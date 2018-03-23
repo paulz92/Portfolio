@@ -1,0 +1,28 @@
+.homeWrap {
+  flex-grow: 1;
+  width: 100%;
+  background-image: url("../../assets/images/colorado.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrap {
+  background-color: rgba(33, 33, 33, 0.5);
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+.contentWrap p {
+  color: azure;
+  font-size: 300%;
+  margin: 0px;
+  padding: 0px 8px;
+}
+
+.name {
+  color: #ff5722;
+  font-weight: bolder;
+}
