@@ -1,34 +1,39 @@
 .Button {
   background-color: transparent;
-  border: 3px solid white;
-  color: white;
+  border: 3px solid azure;
+  border-radius: 10px;
+  color: azure;
   outline: none;
   cursor: pointer;
   font: inherit;
   font-size: 1.5em;
-  padding: 10px;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s;
+}
+
+.Button .arrowIcon {
+  transition: 0.8s;
+  color: azure;
 }
 
 .Button:hover {
-  background-color: #26a69a;
-  border: 3px solid #26a69a;
+  background-color: rgba(33, 33, 33, 0.5);
+  color: #ff5722;
+  border: 3px solid azure;
 }
 
-/* .Button:first-of-type {
-  margin-left: 0;
-  padding-left: 0;
+.Button:hover .arrowIcon {
+  transition: 0.8s;
+  color: #ff5722;
+  transform: rotate(90deg);
 }
 
-.Success {
-  color: #5C9210;
+.buttonP {
+  margin: 10px 0px 10px 10px;  
 }
 
-.Danger {
-  color: #944317;
+.arrowIcon {
+  font-size: 1.5em !important;
 }
-
-.Button:disabled {
-  color: #ccc;
-  cursor: not-allowed;
-} */

@@ -26,3 +26,7 @@
   color: #ff5722;
   font-weight: bolder;
 }
+
+.link {
+  text-decoration: none !important;
+}
