@@ -10,11 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .Button .arrowIcon {
-  transition: 0.8s;
+  transition: 0.5s;
   color: azure;
 }
 
@@ -25,15 +25,16 @@
 }
 
 .Button:hover .arrowIcon {
-  transition: 0.8s;
+  transition: 0.5s;
   color: #ff5722;
   transform: rotate(90deg);
 }
 
 .buttonP {
-  margin: 10px 0px 10px 10px;  
+  margin: 10px;  
 }
 
 .arrowIcon {
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
+  margin-right: 6px;
 }
