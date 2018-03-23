@@ -8,12 +8,13 @@ class Home extends Component {
     return (
       <div className={classes.homeWrap}>
         <div className={classes.contentWrap}>
-          <p>Hey, I'm <span className={classes.name}>Paul Zavattieri</span>.</p>
+          <p>Hi, I'm <span className={classes.name}>Paul Zavattieri</span>.</p>
           <p>I'm a front end web developer.</p>
         </div>
         <Link to="/about" className={classes.link}>
           <Button />
         </Link>
+        <p className={classes.photoCred}>I took this photo of Summit Lake in August 2017, near the peak of Mt. Evans, Colorado.</p>
       </div>
     )
   }
