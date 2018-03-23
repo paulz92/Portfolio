@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import classes from './Projects.css'
 
 class Projects extends Component {
   render() {
     return (
-      <div>
-        <p>Projects</p>
+      <div className={classes.projectsWrap}>
+        <div className={classes.contentWrap}>
+          <p>projects</p>
+        </div>
       </div>
     )
   }

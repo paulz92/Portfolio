@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import classes from './Contact.css'
 
 class Contact extends Component {
   render() {
     return (
-      <div>
-        <p>Contact me</p>
+      <div className={classes.contactWrap}>
+        <div className={classes.contentWrap}>
+          <p>contact</p>
+        </div>
       </div>
     )
   }

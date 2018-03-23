@@ -1,5 +1,9 @@
 /* min height to push footer down */
 .mainContent {
   margin: 50px 0px 0px 0px;
-  min-height: calc(100vh - 116px);
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
