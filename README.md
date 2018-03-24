@@ -2,12 +2,16 @@
 
 Welcome to the build site of my improved portfolio! If you were directed here from my prior portfolio, enhancements include:
 
+MVP:
 - React.js will be the backbone of this portfolio
 - SPA, much faster load times
 - A more friendly UI/UX
-- Clean, non-overwhelming transitions and animations
 - Ability to filter through projects by tech
 - Modals! For project info. I'm excited about this one if you couldn't tell.
+
+
+Nice To Haves:
+- Clean, non-overwhelming transitions and animations
 - Maybe a game...not quite part of MVP but I have some ideas
 
 ## Target Completion

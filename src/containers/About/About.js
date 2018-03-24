@@ -28,13 +28,13 @@ class About extends Component {
               development, decided to make a major career change, and couldn't be happier with my decision.
             </p>
             <p>
-              Please make sure to check out my projects as well. I'm currently seeking a Front End Development 
+              Please make sure to check out my projects. I'm currently seeking a Front End Development 
               position, so if you like what you see and want to speak with me further, please don't hesitate to
               reach out.
             </p>
             <p>
-              And if you don't like what you see, let me know! I welcome all feedback - it's key to achieving 
-              and maintaining success as a developer.
+              And if you don't like what you see, let me know! I welcome all feedback - I believe it's key to 
+              achieving and maintaining success as a developer.
             </p>
           </div>
         </div>
