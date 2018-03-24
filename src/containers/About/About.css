@@ -1,15 +1,51 @@
 .aboutWrap {
   flex-grow: 1;
   width: 100%;
-  background-image: url("../../assets/images/colorado.jpg");
-  background-size: cover;
+  background-image: url("../../assets/images/colorado2.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.right, .middle, .left, .middleContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.right, .left {
+  flex-grow: 1;
+}
+
+.middle {
+  width: 40%;
+  justify-content: space-between;
+}
+
+.middleContent {
+  height: 85%;
+  justify-content: space-between;
+}
+
+.mePic {
+  background-color: rgba(33, 33, 33, 0.5);
+  border-radius: 40px;
+  padding: 15px 10px;
+  width: 38%;
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none !important;
 }
 
 .contentWrap {
-  width: 80%;
-  flex-grow: 1;
+  background-color: rgba(33, 33, 33, 0.5);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 8%;
 }

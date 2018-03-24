@@ -10,12 +10,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: all 0.5s;
 }
 
-.Button .arrowIcon {
-  transition: 0.5s;
+.Button .arrowIconRight, .Button .arrowIconLeft {
+  font-size: 1.2em !important;
+  transition: all 0.5s;
   color: azure;
+}
+
+.buttonP {
+  margin: 10px 6px;
 }
 
 .Button:hover {
@@ -24,17 +29,12 @@
   border: 3px solid azure;
 }
 
-.Button:hover .arrowIcon {
-  transition: 0.5s;
+.Button:hover .arrowIconRight {
   color: #ff5722;
-  transform: rotate(90deg);
+  transform: rotate(-180deg);
 }
 
-.buttonP {
-  margin: 10px;  
-}
-
-.arrowIcon {
-  font-size: 1.2em !important;
-  margin-right: 6px;
+.Button:hover .arrowIconLeft {
+  color: #ff5722;
+  transform: rotate(180deg);
 }
