@@ -13,7 +13,7 @@ const toolbar = (props) => {
         </nav>
         {/* <Drawer /> */}
         <div className={classes.logoRoot}>
-          <Logo />
+          <Logo goBack={props.goBack} goForward={props.goForward} />
         </div>
       </div>
     </header>

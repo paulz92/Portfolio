@@ -5,9 +5,9 @@ import classes from './PZ.css'
 const pz = (props) => {
   return (
     <div className={classes.pzRoot}>
-      <FastRewind className={classes.arrow}/>
-        <p>PAZ</p>
-      <FastForward className={classes.arrow}/>
+      <FastRewind className={classes.arrow} onClick={props.goBack} />
+      <p>PAZ</p>
+      <FastForward className={classes.arrow} onClick={props.goForward} />
     </div>
   )
 }

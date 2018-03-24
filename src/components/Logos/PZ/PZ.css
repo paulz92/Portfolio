@@ -13,4 +13,15 @@
 
 .arrow {
   color: #ff5722;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #64d8cb;
+  font-size: 2em;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
