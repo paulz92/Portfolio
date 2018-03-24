@@ -1,14 +1,15 @@
 import React from 'react';
 import classes from './Button.css';
-import { ArrowForward } from 'material-ui-icons'
+import { FastForward, FastRewind } from 'material-ui-icons'
 
 const button = (props) => (
   <button
     disabled={props.disabled}
     className={[classes.Button, classes[props.btnType]].join(' ')}
     onClick={props.clicked}>
-      <p className={classes.buttonP}>More about me</p> 
-      <ArrowForward className={classes.arrowIcon} />  
+      <FastRewind className={classes.arrowIconLeft} />
+      <p className={classes.buttonP}>{props.words}</p> 
+      <FastForward className={classes.arrowIconRight} />  
   </button>
 );
 
