@@ -1,8 +1,14 @@
+.aboutRoot {
+  flex-grow: 1;
+  background-image: url("../../assets/images/colorado2.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .aboutWrap {
   flex-grow: 1;
   width: 100%;
-  background-image: url("../../assets/images/colorado2.jpg");
-  background-size: 100% 100%;
   display: flex;
   justify-content: flex-start;
   align-content: stretch;
@@ -12,40 +18,56 @@
 .right, .middle, .left, .middleContent {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  color: azure;
 }
 
 .right, .left {
-  flex-grow: 1;
+  width: 40%;
+  padding: 0px 20px;
 }
 
 .middle {
-  width: 40%;
+  width: 20%;
   justify-content: space-between;
 }
 
 .middleContent {
-  height: 85%;
+  height: 45%;
   justify-content: space-between;
+}
+
+.left p {
+  margin: 12px 0px;
+  line-height: 1.4em;
+}
+
+.leftContent {
+  background-color: rgba(33, 33, 33, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.introP {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.thanks {
+  font-weight: bolder;
+  color: #ff5722;
 }
 
 .mePic {
   background-color: rgba(33, 33, 33, 0.5);
-  border-radius: 40px;
+  border-radius: 10px;
   padding: 15px 10px;
-  width: 38%;
+  width: 65%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .link {
   text-decoration: none !important;
-}
-
-.contentWrap {
-  background-color: rgba(33, 33, 33, 0.5);
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 8%;
 }
