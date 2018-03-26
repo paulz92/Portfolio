@@ -4,7 +4,9 @@ import classes from './SkillBlock.css'
 const skillBlock = (props) => {
   return (
     <div className={classes.skillBlockRoot}>
-      <img src={require("../../../../assets/images/me.png")} alt="me" className={classes.picWidth}/>
+    <div className={classes.picDiv}>
+      <img src={props.picture} alt="me" className={classes.picWidth}/>
+      </div>
       <p>{props.name}</p>
     </div>
   )

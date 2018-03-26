@@ -1,15 +1,20 @@
 .skillBlockRoot {
+  height: 160px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  margin-right: 20px;
 }
 
-.skillBlockRoot + .skillBlockRoot {
-  margin-left: 30px;
+.picDiv {
+  margin-top: 10px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .picWidth {
   max-width: 100px;
-  margin-top: 10px;
 }
