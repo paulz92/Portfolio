@@ -1,10 +1,9 @@
 import React from 'react'
+import classes from './Project.css'
 
 const project = (props) => {
   return (
-    <div>
-      <p>project 1</p>
-    </div>
+    <img src={props.image} alt={props.name} className={classes.projImage} />
   )
 }
 

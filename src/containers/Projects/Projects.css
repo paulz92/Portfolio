@@ -2,7 +2,8 @@
   flex-grow: 1;
   width: 100%;
   background-image: url("../../assets/images/backgrounds/colorado4.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,4 +25,16 @@
 .indTabs {
   font-weight: bold !important;
   font-size: 1.1em !important;
+}
+
+.stackGrid {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+.stackGrid p {
+  text-align: center;
+  border: 1px solid pink;
 }

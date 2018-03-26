@@ -8,6 +8,14 @@ const myProjects = [
     image: require('../../assets/images/projects/kegged.png')
   },
   {
+    name: 'Garlic',
+    github: 'https://github.com/paulz92/garlic',
+    deploy: 'https://paulz92.github.io/garlic/',
+    description: 'blah blah',
+    tag: 'JQUERY',
+    image: require('../../assets/images/projects/garlic.png')
+  },
+  {
     name: 'Torq',
     github: 'https://github.com/try-torq/client',
     deploy: 'http://167.99.6.76/',
@@ -16,12 +24,12 @@ const myProjects = [
     image: require('../../assets/images/projects/torq.png')
   },
   {
-    name: 'Garlic',
-    github: 'https://github.com/paulz92/garlic',
-    deploy: 'https://paulz92.github.io/garlic/',
+    name: 'My Portfolio',
+    github: 'https://github.com/paulz92/Portfolio',
+    deploy: 'https://github.com/paulz92/Portfolio',
     description: 'blah blah',
-    tag: 'JQUERY',
-    image: require('../../assets/images/projects/garlic.png')
+    tag: 'REACT.JS',
+    image: require('../../assets/images/projects/portfolio.png')
   },
   {
     name: 'NHL News Scraper',
