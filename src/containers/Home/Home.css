@@ -1,7 +1,7 @@
 .homeRoot {
   flex-grow: 1;
   width: 100%;
-  background-image: url("../../assets/images/colorado.jpg");
+  background-image: url("../../assets/images/backgrounds/colorado.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
