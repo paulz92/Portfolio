@@ -10,51 +10,51 @@ const mySkills = [
   {
     name: 'JavaScript',
     examples: [
-      { name: 'JavaScript', picture: require("../../assets/images/javascript.png") }, 
-      { name: 'React.js', picture: require("../../assets/images/react.png") },
-      { name: 'Vue.js', picture: require("../../assets/images/vue.png") },
-      { name: 'jQuery', picture: require("../../assets/images/jquery.png") },
-      { name: 'Node.js', picture: require("../../assets/images/node.png") },
-      { name: 'Express.js', picture: require("../../assets/images/express.png") },
-      { name: 'Handlebars.js', picture: require("../../assets/images/handlebars.png") }
+      { name: 'JavaScript', picture: require("../../assets/images/icons/javascript.png") }, 
+      { name: 'React.js', picture: require("../../assets/images/icons/react.png") },
+      { name: 'Vue.js', picture: require("../../assets/images/icons/vue.png") },
+      { name: 'jQuery', picture: require("../../assets/images/icons/jquery.png") },
+      { name: 'Node.js', picture: require("../../assets/images/icons/node.png") },
+      { name: 'Express.js', picture: require("../../assets/images/icons/express.png") },
+      { name: 'Handlebars.js', picture: require("../../assets/images/icons/handlebars.png") }
     ]
   },
   {
     name: 'CSS',
     examples: [
-      { name: 'CSS3', picture: require("../../assets/images/css.png") }, 
-      { name: 'Bootstrap', picture: require("../../assets/images/bootstrap.png") },
-      { name: 'Materialize', picture: require("../../assets/images/materialize.png")},
-      { name: 'Material UI', picture: require("../../assets/images/materialui.png") }
+      { name: 'CSS3', picture: require("../../assets/images/icons/css.png") }, 
+      { name: 'Bootstrap', picture: require("../../assets/images/icons/bootstrap.png") },
+      { name: 'Materialize', picture: require("../../assets/images/icons/materialize.png")},
+      { name: 'Material UI', picture: require("../../assets/images/icons/materialui.png") }
     ]
   },
   {
     name: 'HTML',
     examples: [
-      { name: 'HTML5', picture: require("../../assets/images/html.png") }, 
-      { name: 'JSX', picture: require("../../assets/images/jsx.png") },
+      { name: 'HTML5', picture: require("../../assets/images/icons/html.png") }, 
+      { name: 'JSX (kinda HTMLish)', picture: require("../../assets/images/icons/jsx.png") },
     ]
   },
   {
     name: 'Back End',
     examples: [
-      { name: 'MySQL', picture: require("../../assets/images/mysql.png") }, 
-      { name: 'MongoDB', picture: require("../../assets/images/mongo.png") }
+      { name: 'MySQL', picture: require("../../assets/images/icons/mysql.png") }, 
+      { name: 'MongoDB', picture: require("../../assets/images/icons/mongo.png") }
     ]
   },
   {
     name: 'Testing',
     examples: [
-      { name: 'Mocha', picture: require("../../assets/images/mocha.png") }, 
-      { name: 'Chai', picture: require("../../assets/images/chai.png") }
+      { name: 'Mocha', picture: require("../../assets/images/icons/mocha.png") }, 
+      { name: 'Chai', picture: require("../../assets/images/icons/chai.png") }
     ]
   },
   {
     name: 'Tools',
     examples: [
-      { name: 'GitHub', picture: require("../../assets/images/github.png") }, 
-      { name: 'Heroku', picture: require("../../assets/images/heroku.png") },
-      { name: 'VS Code', picture: require("../../assets/images/vscode.png")}
+      { name: 'GitHub', picture: require("../../assets/images/icons/github.png") }, 
+      { name: 'Heroku', picture: require("../../assets/images/icons/heroku.png") },
+      { name: 'VS Code', picture: require("../../assets/images/icons/vscode.png")}
     ]
   }
 ]
