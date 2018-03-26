@@ -1,0 +1,15 @@
+.skillBlockRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillBlockRoot + .skillBlockRoot {
+  margin-left: 30px;
+}
+
+.picWidth {
+  max-width: 100px;
+  margin-top: 10px;
+}

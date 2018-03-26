@@ -5,6 +5,7 @@ import About from './containers/About/About'
 import Home from './containers/Home/Home'
 import Contact from './containers/Contact/Contact'
 import Projects from './containers/Projects/Projects'
+import Skills from './containers/Skills/Skills'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route path="/skills" component={Skills} />
           <Route path="/" component={Home} />
         </Switch>
       </Layout>
