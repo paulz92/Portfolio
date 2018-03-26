@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import SwipeableViews from 'react-swipeable-views'
 import StackGrid from 'react-stack-grid'
 import { AppBar, Tabs, Typography } from 'material-ui'
@@ -6,7 +7,10 @@ import { Tab } from 'material-ui/Tabs'
 import classes from './Projects.css'
 import SectionHeader from '../../components/SectionHeader/SectionHeader'
 import Project from '../../components/Project/Project'
+import Button from '../../components/UI/Button/Button'
 import PhotoCred from '../../components/PhotoCred/PhotoCred'
+import Modal from '../../components/UI/Modal/Modal'
+import ProjectDetails from '../../components/Project/ProjectDetails/ProjectDetails'
 import myProjects from './projectinfo.js'
 
 function TabContainer({ children }) {
@@ -20,7 +24,9 @@ function TabContainer({ children }) {
 class Projects extends Component {
   state = {
     value: 0,
-    tags: ["ALL", "JAVASCRIPT", "REACT.JS", "VUE.JS", "JQUERY", "NODE.JS"]
+    tags: ["ALL", "VANILLA JS", "REACT.JS", "VUE.JS", "JQUERY", "NODE.JS"],
+    shouldModalBeOpen: false,
+    clickedProject: {}
   }
 
   handleChange = (event, value) => {
@@ -29,6 +35,14 @@ class Projects extends Component {
 
   handleChangeIndex = index => {
     this.setState({ ...this.state, value: index })
+  }
+
+  openModalHandler = () => {
+    this.setState({ ...this.state, shouldModalBeOpen: true })
+  }
+
+  closeModalHandler = () => {
+    this.setState({ ...this.state, shouldModalBeOpen: false })
   }
 
   // create tabs from state
@@ -66,7 +80,7 @@ class Projects extends Component {
 
     const allProjects = (
       myProjects.map((project, index) => {
-        return <Project key={index} image={project.image} name={project.name} />
+        return <Project key={index} image={project.image} name={project.name} clicked={this.openModalHandler} />
       })
     )
 
@@ -74,7 +88,7 @@ class Projects extends Component {
       myProjects.filter(project => {
         return project.tag === tag
       }).map((foundProject, index) => {
-        return <Project key={index} image={foundProject.image} name={foundProject.name} />
+        return <Project key={index} image={foundProject.image} name={foundProject.name} clicked={this.openModalHandler} />
       })
     )
     
@@ -101,6 +115,9 @@ class Projects extends Component {
   render() {
     return (
       <div className={classes.projectsWrap}>
+        <Modal show={this.state.shouldModalBeOpen} modalClosed={this.closeModalHandler}>
+          <ProjectDetails project={myProjects[1]} />
+        </Modal>
         <SectionHeader header="Projects" />
         <div className={classes.contentWrap}>
           <AppBar className={classes.tabsRoot} position="static">
@@ -121,6 +138,9 @@ class Projects extends Component {
             {this.filterTabs()}
           </SwipeableViews>
         </div>
+        <Link to="/contact" className={classes.link}>
+            <Button words="Contact me" />
+        </Link>
         <PhotoCred 
           words="Here we see Echo Lake. If you drive the Mt. Evans Scenic Byway, you'll inevtiably pass by Echo Lake Lodge. 
             Hike around the lake or grab a bite to eat before finishing the drive." />

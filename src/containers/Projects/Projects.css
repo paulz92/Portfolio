@@ -13,6 +13,7 @@
 .contentWrap {
   width: 70%;
   flex-grow: 1;
+  margin-bottom: 20px;
 }
 
 .tabsRoot {
@@ -37,4 +38,8 @@
 .stackGrid p {
   text-align: center;
   border: 1px solid pink;
+}
+
+.link {
+  text-decoration: none;
 }

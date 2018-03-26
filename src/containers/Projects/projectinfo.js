@@ -36,7 +36,7 @@ const myProjects = [
     github: 'https://github.com/paulz92/News-Scraper',
     deploy: 'https://nhl-news-scraper-pz.herokuapp.com/',
     description: 'blah blah',
-    tag: 'JAVASCRIPT',
+    tag: 'VANILLA JS',
     image: require('../../assets/images/projects/scraper.png')
   },
   {
@@ -83,7 +83,7 @@ const myProjects = [
     github: 'https://github.com/paulz92/GifTastic',
     deploy: 'https://paulz92.github.io/GifTastic/',
     description: 'blah blah',
-    tag: 'JAVASCRIPT',
+    tag: 'VANILLA JS',
     image: require('../../assets/images/projects/gif.png')
   },
   {
@@ -91,7 +91,7 @@ const myProjects = [
     github: 'https://github.com/paulz92/Hangman-Game',
     deploy: 'https://paulz92.github.io/Hangman-Game/',
     description: 'blah blah',
-    tag: 'JAVASCRIPT',
+    tag: 'VANILLA JS',
     image: require('../../assets/images/projects/hangman.png')
   }
 ]
