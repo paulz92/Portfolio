@@ -14,19 +14,19 @@
 
 .headerContent {
   margin: auto;
-  width: 80%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .headerRoot nav {
   height: 100%;
 }
 
-.logoRoot {
-  height: 80%;
+.desktopNav {
+  width: 100%;
 }
 
 @media (max-width: 499px) {

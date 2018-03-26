@@ -5,11 +5,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   height: 100%;
 }
 
-@media (min-width: 500px) {
-  .NavItems {
-    flex-flow: row;
-  }
+.logoRoot {
+  width: 20%;
+  height: 80%;
+  margin: 0px 25px;
+}
+
+.leftLinks, .rightLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
 }
