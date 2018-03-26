@@ -1,0 +1,31 @@
+.projDetailsRoot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projPic {
+  width: 100%;
+}
+
+.rootRow {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+}
+
+.linkPic {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

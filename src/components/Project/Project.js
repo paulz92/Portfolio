@@ -5,7 +5,7 @@ import { FastForward, FastRewind } from 'material-ui-icons'
 const project = (props) => {
   return (
     <div className={classes.projCardRoot}>
-      <img src={props.image} alt={props.name} className={classes.projImage} />
+      <img src={props.siteImage} alt={props.name} className={classes.projImage} />
       <div className={classes.projName}>
         <div className={classes.small} data-name={props.name} onClick={props.clicked}>
           <FastRewind className={classes.arrowIconLeft} />
