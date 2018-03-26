@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import SwipeableViews from 'react-swipeable-views'
+import StackGrid from 'react-stack-grid'
 import { AppBar, Tabs, Typography } from 'material-ui'
 import { Tab } from 'material-ui/Tabs'
 import classes from './Projects.css'
 import SectionHeader from '../../components/SectionHeader/SectionHeader'
+import Project from '../../components/Project/Project'
 import PhotoCred from '../../components/PhotoCred/PhotoCred'
 import myProjects from './projectinfo.js'
 
@@ -39,34 +41,56 @@ class Projects extends Component {
     )
   }
 
+  // render content in stack grid function
+  renderStack = content => {
+    return (
+      <StackGrid
+        monitorImagesLoaded
+        columnWidth={300}
+        duration={300}
+        gutterWidth={20}
+        gutterHeight={16}
+        appearDelay={30}
+        className={classes.stackGrid}
+      >
+        {content}
+      </StackGrid>
+    )
+  }
+
   // code for filtering projects
   // copy tags, map through them. if tag is All, map and return all my projects in container.
   // otherwise, filter my projects for those equalling selecting tag, map and return those projects
   filterTabs() {
     const { tags } = this.state
+
+    const allProjects = (
+      myProjects.map((project, index) => {
+        return <Project key={index} image={project.image} name={project.name} />
+      })
+    )
+
+    const filteredProjects = (tag) => (
+      myProjects.filter(project => {
+        return project.tag === tag
+      }).map((foundProject, index) => {
+        return <Project key={index} image={foundProject.image} name={foundProject.name} />
+      })
+    )
+    
     return (
       tags.map((tag, index) => {
         if (tag === "ALL") {
           return (
             <TabContainer key={index} label={tag}>
-              {
-                myProjects.map((project, index) => {
-                  return <p key={index}>{project.name}</p>
-                })
-              }
+              {this.renderStack(allProjects)}
             </TabContainer>
           ) 
         } 
         else {
           return (
             <TabContainer key={index} label={tag}>
-              {
-                myProjects.filter(project => {
-                  return project.tag === tag
-                }).map((foundProject, index) => {
-                  return <p key={index}>{foundProject.name}</p>
-                })
-              }
+              {this.renderStack(filteredProjects(tag))}
             </TabContainer>
           )
         }
@@ -75,7 +99,6 @@ class Projects extends Component {
   }
 
   render() {
-    console.log(myProjects)
     return (
       <div className={classes.projectsWrap}>
         <SectionHeader header="Projects" />
