@@ -10,8 +10,8 @@ class About extends Component {
     return (
       <div className={classes.aboutRoot}>
         <SectionHeader header="About" />
+        <img src={require("../../assets/images/me.png")} alt="me" className={classes.mePic} />
         <div className={classes.middle}>
-          <img src={require("../../assets/images/me.png")} alt="me" className={classes.mePic} />
           <div className={classes.mainContent}>
             <p className={classes.introP}>
               <span className={classes.thanks}>Thank you</span> for stopping by to check out my portfolio.

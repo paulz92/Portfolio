@@ -1,42 +1,20 @@
 .NavItem {
-  margin: 20px 0;
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
 }
 
 .NavItem a {
-  color: #FFFFFF;
+  color: azure;
   text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  display: block;
+  height: 100%;
+  padding: 16px 20px;
 }
 
 .NavItem a:hover,
 .NavItem a:active,
 .NavItem a.active {
-  color: #00acc1;
-}
-
-@media (min-width: 500px) {
-  .NavItem {
-    margin: 0;
-    display: flex;
-    height: 100%;
-    width: auto;
-    align-items: center;
-  }
-  
-  .NavItem a {
-    color: white;
-    height: 100%;
-    padding: 16px 20px;
-  }
-  
-  .NavItem a:hover,
-  .NavItem a:active,
-  .NavItem a.active {
-    color: #ff5722;
-  }  
-}
+  color: #ff5722;
+}  

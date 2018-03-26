@@ -25,3 +25,9 @@
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+.link {
+  text-decoration: none;
+  color: azure;
+  font-weight: bold;
+}
