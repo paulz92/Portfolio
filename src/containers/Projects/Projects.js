@@ -29,6 +29,10 @@ class Projects extends Component {
     clickedProject: {}
   }
 
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+
   handleChange = (event, value) => {
     this.setState({ ...this.state, value })
   }
@@ -80,7 +84,7 @@ class Projects extends Component {
 
     const allProjects = (
       myProjects.map((project, index) => {
-        return <Project key={index} image={project.image} name={project.name} clicked={this.openModalHandler} />
+        return <Project key={index} siteImage={project.siteImage} name={project.name} clicked={this.openModalHandler} />
       })
     )
 
@@ -88,7 +92,7 @@ class Projects extends Component {
       myProjects.filter(project => {
         return project.tag === tag
       }).map((foundProject, index) => {
-        return <Project key={index} image={foundProject.image} name={foundProject.name} clicked={this.openModalHandler} />
+        return <Project key={index} siteImage={foundProject.siteImage} name={foundProject.name} clicked={this.openModalHandler} />
       })
     )
     
@@ -116,7 +120,7 @@ class Projects extends Component {
     return (
       <div className={classes.projectsWrap}>
         <Modal show={this.state.shouldModalBeOpen} modalClosed={this.closeModalHandler}>
-          <ProjectDetails project={myProjects[1]} />
+          <ProjectDetails project={myProjects[0]} />
         </Modal>
         <SectionHeader header="Projects" />
         <div className={classes.contentWrap}>

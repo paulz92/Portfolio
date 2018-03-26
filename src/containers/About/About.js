@@ -6,6 +6,10 @@ import PhotoCred from '../../components/PhotoCred/PhotoCred'
 import SectionHeader from '../../components/SectionHeader/SectionHeader'
 
 class About extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  
   render() {
     return (
       <div className={classes.aboutRoot}>
