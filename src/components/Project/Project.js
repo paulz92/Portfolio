@@ -7,7 +7,7 @@ const project = (props) => {
     <div className={classes.projCardRoot}>
       <img src={props.siteImage} alt={props.name} className={classes.projImage} />
       <div className={classes.projName}>
-        <div className={classes.small} data-name={props.name} onClick={props.clicked}>
+        <div className={classes.small} data-name={props.name} onClick={() => props.clicked(props.name)}>
           <FastRewind className={classes.arrowIconLeft} />
           <h3>{props.name}</h3>
           <FastForward className={classes.arrowIconRight} /> 

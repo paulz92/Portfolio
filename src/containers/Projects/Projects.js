@@ -18,19 +18,19 @@ function TabContainer({ children }) {
     <Typography component="div" style={{ padding: 8 * 3 }}>
       {children}
     </Typography>
-  );
+  )
 }
 
 class Projects extends Component {
   state = {
     value: 0,
-    tags: ["ALL", "VANILLA JS", "REACT.JS", "VUE.JS", "JQUERY", "NODE.JS"],
+    tags: ["ALL", "REACT.JS", "VUE.JS", "JQUERY", "FULL STACK", "NODE.JS", "VANILLA JS"],
     shouldModalBeOpen: false,
     clickedProject: {}
   }
 
   componentDidMount() {
-    window.scrollTo(0,0);
+    window.scrollTo(0,0)
   }
 
   handleChange = (event, value) => {
@@ -41,12 +41,23 @@ class Projects extends Component {
     this.setState({ ...this.state, value: index })
   }
 
-  openModalHandler = () => {
-    this.setState({ ...this.state, shouldModalBeOpen: true })
+  openModalHandler = (name) => {
+    const match = (
+      myProjects.filter(project => {
+        return project.name === name
+      })
+    )
+    this.setState({ ...this.state, shouldModalBeOpen: true, clickedProject: match[0] })
   }
 
   closeModalHandler = () => {
     this.setState({ ...this.state, shouldModalBeOpen: false })
+  }
+
+  // overrides material ui to ensure active tab is our dark orange theme
+  activeTabStyle = (isActive) => {
+    let tabStyle = classes.indTabActive
+    return isActive ? tabStyle : tabStyle = classes.indTab
   }
 
   // create tabs from state
@@ -54,7 +65,13 @@ class Projects extends Component {
     const { tags } = this.state
     return (
       tags.map((tag, index) => {
-        return <Tab key={index} className={classes.indTabs} label={tag} />
+        return (
+          <Tab 
+            key={index} 
+            className={this.activeTabStyle(this.state.value === index)} 
+            label={tag}
+          />
+        )
       })
     )
   }
@@ -120,7 +137,7 @@ class Projects extends Component {
     return (
       <div className={classes.projectsWrap}>
         <Modal show={this.state.shouldModalBeOpen} modalClosed={this.closeModalHandler}>
-          <ProjectDetails project={myProjects[0]} />
+          <ProjectDetails project={this.state.clickedProject} />
         </Modal>
         <SectionHeader header="Projects" />
         <div className={classes.contentWrap}>
@@ -128,9 +145,10 @@ class Projects extends Component {
             <Tabs
               value={this.state.value}
               onChange={this.handleChange}
-              indicatorColor="#ff5722"
-              textColor="inherit"
+              indicatorColor="#64d8cb"
+              textColor="azure"
               fullWidth
+              scrollable
             >
               {this.renderTabs()}
             </Tabs>
