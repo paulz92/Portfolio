@@ -44,7 +44,7 @@ const myProjects = [
     deploy: 'https://nhl-news-scraper-pz.herokuapp.com/',
     description: 'A web app that lets users scrape, view, and leave comments on the latest NHL.com news articles.',
     techStack: 'Node.js, MongoDB, Mongoose, Express.js, Handlebars.js, Materialize, Cheerio, HTML5, CSS3, JavaScript',
-    tag: 'VANILLA JS',
+    tag: 'FULL STACK',
     siteImage: require('../../assets/images/projects/scraper.png'),
     logoImage: require('../../assets/images/logos/hockey.png')
   },
@@ -62,7 +62,7 @@ const myProjects = [
     deploy: 'https://eat-da-burger-pzhw.herokuapp.com/',
     description: 'A burger logger utilizing MySQL, Node, Express, Handlebars and a homemade ORM which follows the MVC design pattern.',
     techStack: 'Node.js, MySQL, Express.js, Handlebars.js, Bootstrap, JawsDB, JavaScript, HTML5, CSS3',
-    tag: 'NODE.JS',
+    tag: 'FULL STACK',
     siteImage: require('../../assets/images/projects/burger.png'),
     logoImage: require('../../assets/images/logos/burger.png')
   },
@@ -102,7 +102,7 @@ const myProjects = [
     deploy: 'https://paulz92.github.io/GifTastic/',
     description: 'You guessed it - this app generates gifs. Users can click buttons to retrieve Gifs from Giphy API, and can add new buttons as well.',
     techStack: 'JavaScript, jQuery (AJAX), HTML5, CSS3, Bootstrap, Google Fonts, Giphy API',
-    tag: 'VANILLA JS',
+    tag: 'JQUERY',
     siteImage: require('../../assets/images/projects/gif.png'),
     logoImage: require('../../assets/images/logos/gif.png')
   },

@@ -32,7 +32,7 @@ const mySkills = [
     name: 'HTML',
     examples: [
       { name: 'HTML5', picture: require("../../assets/images/icons/html.png") }, 
-      { name: 'JSX (kinda HTMLish)', picture: require("../../assets/images/icons/jsx.png") },
+      { name: 'JSX', picture: require("../../assets/images/icons/jsx.png") },
     ]
   },
   {
