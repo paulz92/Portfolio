@@ -1,26 +1,33 @@
 # Paul Zavattieri's Portfolio
 
-Welcome to the build site of my improved portfolio! If you were directed here from my prior portfolio, enhancements include:
+Welcome to the build site of my portfolio! Most recent build is deployed [here](https://paulz92.github.io/Portfolio/)
 
-MVP:
-- React.js will be the backbone of this portfolio
+Improvements from my original portfolio:
+
+- Built with React.js
 - SPA, much faster load times
 - A more friendly UI/UX
-- Ability to filter through projects by tech
-- Modals! For project info. I'm excited about this one if you couldn't tell.
+- Ability to filter through my projects by tech
+- Modals for project info
+- Animated buttons, animated modals
+- A navbar with arrows to navigate back and forward
 
+Planned enhancements:
 
-Nice To Haves:
-- Clean, non-overwhelming transitions and animations
-- Maybe a game...not quite part of MVP but I have some ideas
+- Mobile responsiveness - target completion date of April 1, 2018
+- Enhanced styling for the project modals - target completion date of April 1, 2018
+- A more crisp picture of me - target completion the next time I look nice in front of a camera
 
-## Target Completion
+## Tech Stack
 
-My goal is to have an MVP deployed by April 1, 2018.
-
-## In the meantime...
-
-All pertinent content is currently being displayed on my v1 Portolio, [here](https://paulz92.github.io/Responsive-Portfolio/). Please check out my projects, make an account on [Kegged.](http://174.138.43.93/), and feel free to reach out if you like what you see.
+- React.js
+- React Router DOM
+- React Stack Grid
+- React Swipeable Views
+- Init by create-react-app for quick Webpack, Babel, ESLint configurations
+- CSS Modules
+- Material-UI
+- Deployed with gh-pages
 
 ## Contact Details
 
