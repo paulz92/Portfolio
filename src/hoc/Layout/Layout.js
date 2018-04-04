@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Aux from '../Auxiliary/Auxiliary'
 import classes from './Layout.css'
 import Toolbar from '../../components/Nav/Toolbar/Toolbar'
-// import Drawer from '../../components/Nav/Drawer/Drawer'
+import Drawer from '../../components/Nav/Drawer/Drawer'
 import Footer from '../../components/Footer/Footer'
 import { withRouter } from 'react-router-dom'
 
@@ -41,9 +41,11 @@ class Layout extends Component {
           toggleDrawer={this.handleDrawerToggle}
           goBack={this.handleGoBack}
           goForward={this.handleGoForward} />
-        {/* <Drawer 
+        <Drawer 
           closed={this.handleDrawerClose} 
-          open={this.state.showDrawer} /> */}
+          open={this.state.showDrawer}
+          goForward={this.handleGoForward}
+          goBack={this.handleGoBack} />
         <main className={classes.mainContent}>
           {this.props.children}
         </main>

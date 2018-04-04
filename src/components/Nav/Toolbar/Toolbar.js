@@ -1,16 +1,20 @@
 import React from 'react'
 import classes from './Toolbar.css'
-// import Drawer from '../Drawer/Drawer'
+import Toggler from '../Drawer/Toggler/Toggler'
 import NavItems from '../NavItems/NavItems'
+import PZ from '../../Logos/PZ/PZ'
 
 const toolbar = (props) => {
   return (
     <header className={classes.headerRoot}>
+      <div className={classes.smallScreenDisplay}>
+        <Toggler clicked={props.toggleDrawer} />
+        <PZ goForward={props.goForward} goBack={props.goBack} />
+      </div>
       <div className={classes.headerContent}>
         <nav className={classes.desktopNav}>
           <NavItems goForward={props.goForward} goBack={props.goBack} />
         </nav>
-        {/* <Drawer /> */}
       </div>
     </header>
   )

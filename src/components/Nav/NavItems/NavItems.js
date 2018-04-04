@@ -6,6 +6,9 @@ import Logo from '../../Logos/PZ/PZ'
 const navItems = (props) => {
   return (
     <ul className={classes.NavItems}>
+      <div className={classes.onlyOnMobile}>
+        <NavItem link="/" exact>HOME</NavItem>
+      </div>
       <div className={classes.leftLinks} >
         <NavItem link="/about">ABOUT</NavItem>
         <NavItem link="/skills">SKILLS</NavItem>
