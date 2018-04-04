@@ -29,8 +29,22 @@
   width: 100%;
 }
 
+.smallScreenDisplay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (max-width: 499px) {
   .desktopNav {
+    display: none;
+  }
+}
+
+@media (min-width: 499px) {
+  .smallScreenDisplay {
     display: none;
   }
 }
