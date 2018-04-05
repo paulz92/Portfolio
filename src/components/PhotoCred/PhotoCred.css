@@ -12,3 +12,10 @@
   color: azure;
   font-size: 0.9em;
 }
+
+@media (max-width: 500px) {
+  .photoCred {
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
