@@ -59,3 +59,29 @@
   width: 80px;
   margin: 20px;
 }
+
+.contactContainer {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .contactWrap {
+    background-size: cover;
+  } 
+
+  .contentWrap {
+    width: 90%;
+  }
+
+  .social {
+    width: 100%;
+  }
+
+  .thanksBlurb, .social {
+    padding: 0px;
+  }
+
+  .thanksBlurb p {
+    font-size: 1.4em;
+  }
+}
