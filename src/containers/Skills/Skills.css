@@ -13,3 +13,9 @@
 .link {
   text-decoration: none !important;
 }
+
+@media (max-width: 500px) {
+  .skillsRoot {
+    background-size: cover;
+  }
+}

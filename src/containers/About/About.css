@@ -48,3 +48,26 @@
 .link {
   text-decoration: none !important;
 }
+
+@media (max-width: 500px) {
+  .aboutRoot {
+    background-size: cover;
+  }
+
+  .middle {
+    width: 90%;
+  }
+
+  .mainContent {
+    width: 100%;
+  }
+
+  .mePic {
+    width: 70%;
+  }
+  
+  .mainContent p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+}
