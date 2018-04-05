@@ -89,7 +89,6 @@
     align-items: center;
   }
 
-
   .middle {
     width: 90%;
   }
@@ -100,6 +99,7 @@
 
   .mePic {
     width: 70%;
+    margin-bottom: 30px;
   }
   
   .mainContent p {
