@@ -23,3 +23,14 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+@media (max-width: 500px) {
+  .skillSectionRoot {
+    width: 85%;
+    padding-bottom: 16px;
+  }
+  
+  .skillBlocksRoot {
+    justify-content: space-around;
+  }
+}

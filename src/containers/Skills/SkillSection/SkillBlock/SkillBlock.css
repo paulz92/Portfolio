@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
+  margin: 14px 8px;
 }
 
 .picDiv {
@@ -17,4 +17,18 @@
 
 .picWidth {
   max-width: 100px;
+}
+
+@media (max-width: 500px) {
+  .skillBlockRoot {
+    height: 100px;
+  }
+
+  .picDiv {
+    min-height: 70px;
+  }
+
+  .picWidth {
+    max-width: 70px;
+  }
 }
