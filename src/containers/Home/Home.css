@@ -40,6 +40,12 @@
 }
 
 @media (max-width: 500px) {
+  .homeRoot {
+    background-image: url("../../assets/images/backgrounds/mcolorado.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;    
+  }
+
   .contentWrap p {
     font-size: 1.2em;
   }
