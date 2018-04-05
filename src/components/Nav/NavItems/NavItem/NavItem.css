@@ -24,6 +24,12 @@
   color: #ff5722;
 }
 
+@media (max-width: 800px) {
+  .NavItem a {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 500px) {
   .NavItem {
     margin: 0;

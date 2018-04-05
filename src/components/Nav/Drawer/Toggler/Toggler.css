@@ -1,23 +1,23 @@
 .toggler {
-  width: 40px;
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
-  box-sizing: border-box;
-  cursor: pointer;
+  display: none;
 }
 
-.toggler div {
-  width: 90%;
-  height: 3px;
-  background-color: white;
-}
-
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .toggler {
-      display: none;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .toggler div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
   }
 }

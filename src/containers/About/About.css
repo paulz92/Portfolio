@@ -9,6 +9,13 @@
   align-items: center;
 }
 
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .middle {
   display: flex;
   flex-direction: row;
@@ -49,10 +56,39 @@
   text-decoration: none !important;
 }
 
+@media (max-width: 800px) {
+  .mainContainer {
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mePic {
+    width: 28%;
+    margin: 0px;
+  }
+
+  .middle {
+    width: 65%;
+  }
+  
+  .mainContent {
+    width: 100%;
+  }
+}
+
 @media (max-width: 500px) {
   .aboutRoot {
     background-image: url("../../assets/images/backgrounds/mcolorado2.jpg");
   }
+
+  .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   .middle {
     width: 90%;

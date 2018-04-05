@@ -64,16 +64,35 @@
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .contentWrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .thanksBlurb {
+    width: 65%;
+  }
+
+  .social {
+    width: 20%;
+  }
+}
+
 @media (max-width: 500px) {
   .contactWrap {
     background-image: url("../../assets/images/backgrounds/mseattle.jpg");
   } 
 
   .contentWrap {
-    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .social {
+  .social, .thanksBlurb {
     width: 100%;
   }
 
