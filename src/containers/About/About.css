@@ -81,6 +81,7 @@
 @media (max-width: 500px) {
   .aboutRoot {
     background-image: url("../../assets/images/backgrounds/mcolorado2.jpg");
+    background-attachment: scroll;
   }
 
   .mainContainer {

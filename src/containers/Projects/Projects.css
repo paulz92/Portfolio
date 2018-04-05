@@ -46,6 +46,7 @@
 @media (max-width: 500px) {
   .projectsWrap {
     background-image: url("../../assets/images/backgrounds/mcolorado4.jpg");
+    background-attachment: scroll;
   }
 
   .contentWrap {

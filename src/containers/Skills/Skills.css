@@ -17,5 +17,6 @@
 @media (max-width: 500px) {
   .skillsRoot {
     background-image: url("../../assets/images/backgrounds/mcolorado3.jpg");
+    background-attachment: scroll;
   }
 }
