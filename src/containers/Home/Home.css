@@ -38,3 +38,9 @@
 .link {
   text-decoration: none !important;
 }
+
+@media (max-width: 500px) {
+  .contentWrap p {
+    font-size: 1.2em;
+  }
+}

@@ -46,3 +46,13 @@
   color: #ff5722;
   transform: rotate(180deg);
 }
+
+@media (max-width: 500px) {
+  .Button {
+    font-size: 1em;
+  }
+
+  .Button .arrowIconRight, .Button .arrowIconLeft {
+    font-size: 1em !important;
+  }
+}

@@ -9,7 +9,7 @@ const toolbar = (props) => {
     <header className={classes.headerRoot}>
       <div className={classes.smallScreenDisplay}>
         <Toggler clicked={props.toggleDrawer} />
-        <PZ goForward={props.goForward} goBack={props.goBack} />
+        <PZ goForward={props.goForward} goBack={props.goBack} className={classes.pz} />
       </div>
       <div className={classes.headerContent}>
         <nav className={classes.desktopNav}>
