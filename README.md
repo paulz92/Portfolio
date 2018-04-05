@@ -11,11 +11,11 @@ Improvements from my original portfolio:
 - Modals for project info
 - Animated buttons, animated modals
 - A navbar with arrows to navigate back and forward
+- Responsive on all devices
 
 Planned enhancements:
 
-- Mobile responsiveness - target completion date of April 1, 2018
-- Enhanced styling for the project modals - target completion date of April 1, 2018
+- Enhanced styling for the project modals - target completion date of April 7, 2018
 - A more crisp picture of me - target completion the next time I look nice in front of a camera
 
 ## Tech Stack
