@@ -51,7 +51,7 @@
 
 @media (max-width: 500px) {
   .aboutRoot {
-    background-size: cover;
+    background-image: url("../../assets/images/backgrounds/mcolorado2.jpg");
   }
 
   .middle {

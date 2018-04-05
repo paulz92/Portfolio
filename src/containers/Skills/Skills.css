@@ -16,6 +16,6 @@
 
 @media (max-width: 500px) {
   .skillsRoot {
-    background-size: cover;
+    background-image: url("../../assets/images/backgrounds/mcolorado3.jpg");
   }
 }
