@@ -15,3 +15,13 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+@media (max-width: 500px) {
+  .Modal {
+    width: 80%;
+    max-height: 80%;
+    left: 10%;
+    top: 10%;
+    box-shadow: none;
+  }
+}

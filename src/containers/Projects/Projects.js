@@ -15,7 +15,7 @@ import myProjects from './projectinfo.js'
 
 function TabContainer({ children }) {
   return (
-    <Typography component="div" style={{ padding: 8 * 3 }}>
+    <Typography component="div">
       {children}
     </Typography>
   )
@@ -83,8 +83,6 @@ class Projects extends Component {
         monitorImagesLoaded
         columnWidth={300}
         duration={300}
-        gutterWidth={20}
-        gutterHeight={16}
         appearDelay={30}
         className={classes.stackGrid}
       >
@@ -149,6 +147,7 @@ class Projects extends Component {
               textColor="azure"
               fullWidth
               scrollable
+              scrollButtons="on"
             >
               {this.renderTabs()}
             </Tabs>
