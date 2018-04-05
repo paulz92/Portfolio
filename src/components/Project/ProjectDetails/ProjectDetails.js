@@ -7,7 +7,7 @@ const projectDetails = props => (
       <img src={props.project.siteImage} alt={props.project.name} className={classes.projPic} />
     </div>
     <div className={classes.rootRow}>
-    <h2>{props.project.name}</h2>
+      <h2>{props.project.name}</h2>
       <p>{props.project.description}</p>
       <p>Built with: {props.project.techStack}</p>
       <div className={classes.linkPic}>

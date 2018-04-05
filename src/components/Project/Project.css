@@ -1,17 +1,19 @@
 .projCardRoot {
   max-width: 300px;
+  margin: 10px 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .projImage {
-  width: 300px;
-  height: 240px;
+  width: 280px;
+  height: 225px;
   margin: 0;
 }
 
 .projName {
+  width: 280px;
   display: flex;
   justify-content: center;
   align-items: center;

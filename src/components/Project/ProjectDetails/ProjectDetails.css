@@ -29,3 +29,18 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+
+@media (max-width: 500px) {
+  .projDetailsRoot {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .rootRow {
+    width: 90%;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
