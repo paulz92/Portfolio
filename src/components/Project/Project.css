@@ -58,3 +58,9 @@
   color: #ff5722;
   transform: rotate(180deg);
 }
+
+@media (max-width: 500px) {
+  .projName {
+    background-color: rgba(33, 33, 33, 0.8);
+  }
+}

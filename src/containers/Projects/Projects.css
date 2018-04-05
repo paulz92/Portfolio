@@ -39,14 +39,26 @@
   text-decoration: none;
 }
 
+.buttonDarkRoot {
+  margin-bottom: 30px;
+}
+
 .stackGrid {
   margin-top: 16px;
 }
 
 @media (max-width: 500px) {
   .projectsWrap {
-    background-image: url("../../assets/images/backgrounds/mcolorado4.jpg");
-    background-attachment: scroll;
+    background-image: url("../../assets/images/backgrounds/diagonal_striped_brick.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+
+  .buttonDarkRoot {
+    background-color: rgba(33, 33, 33, 0.8);
+    height: auto;
+    padding: 16px;
+    border-radius: 10px;
   }
 
   .contentWrap {
@@ -55,5 +67,9 @@
 
   .indTab span, .indTabActive span {
     font-size: 1em;
+  }
+
+  .tabsRoot {
+    background-color: rgba(33, 33, 33, 0.8) !important;
   }
 }

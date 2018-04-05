@@ -14,9 +14,21 @@
   text-decoration: none !important;
 }
 
+.buttonDarkRoot {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 500px) {
   .skillsRoot {
-    background-image: url("../../assets/images/backgrounds/mcolorado3.jpg");
-    background-attachment: scroll;
+    background-image: url("../../assets/images/backgrounds/diagonal_striped_brick.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+
+  .buttonDarkRoot {
+    background-color: rgba(33, 33, 33, 0.8);
+    height: auto;
+    padding: 16px;
+    border-radius: 10px;
   }
 }

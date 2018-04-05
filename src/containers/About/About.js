@@ -40,9 +40,11 @@ class About extends Component {
             </div>
           </div>
         </div>
-        <Link to="/skills" className={classes.link}>
-            <Button words="See my skills" />
-        </Link>
+        <div className={classes.buttonDarkRoot}>
+          <Link to="/skills" className={classes.link}>
+              <Button words="See my skills" />
+          </Link>
+        </div>
         <PhotoCred
           words="This is a photo I took while visiting Red Rocks Park just outside of Denver, CO." />
       </div>

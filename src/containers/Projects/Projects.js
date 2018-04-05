@@ -159,9 +159,11 @@ class Projects extends Component {
             {this.filterTabs()}
           </SwipeableViews>
         </div>
-        <Link to="/contact" className={classes.link}>
-            <Button words="Contact me" />
-        </Link>
+        <div className={classes.buttonDarkRoot}>
+          <Link to="/contact" className={classes.link}>
+              <Button words="Contact me" />
+          </Link>
+        </div>
         <PhotoCred 
           words="Here we see Echo Lake. If you drive the Mt. Evans Scenic Byway, you'll inevtiably pass by Echo Lake Lodge. 
             Hike around the lake or grab a bite to eat before finishing the drive." />

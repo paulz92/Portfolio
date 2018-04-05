@@ -71,9 +71,11 @@ class Skills extends Component {
         {mySkills.map((skill, index) => {
           return <SkillSection key={index} skill={skill.name} examples={skill.examples} />
         })}
-        <Link to="/projects" className={classes.link}>
-          <Button words="See my projects" />
-        </Link>
+        <div className={classes.buttonDarkRoot}>
+          <Link to="/projects" className={classes.link}>
+            <Button words="See my projects" />
+          </Link>
+        </div>
         <PhotoCred 
           words="If you've been to Boulder, CO, you might recognize these Flatirons. A little cloudy, but great day for a hike." />
       </div>

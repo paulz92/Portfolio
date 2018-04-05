@@ -28,6 +28,7 @@
   .skillSectionRoot {
     width: 85%;
     padding-bottom: 16px;
+    background-color: rgba(33, 33, 33, 0.8);
   }
   
   .skillBlocksRoot {

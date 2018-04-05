@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import classes from './Contact.css'
 import Button from '../../components/UI/Button/Button'
 import PhotoCred from '../../components/PhotoCred/PhotoCred'
-import SectionHeader from '../../components/SectionHeader/SectionHeader'
 
 class Contact extends Component {
   componentDidMount() {
@@ -12,7 +11,7 @@ class Contact extends Component {
   render() {
     return (
       <div className={classes.contactWrap}>
-        <SectionHeader header="Contact" />
+        <h1 className={classes.headerClass}>Contact</h1>
         <div className={classes.contentWrap}>
           <div className={classes.thanksBlurb}>
             <p>Again, <span className={classes.thanks}>thank you</span> for visiting my portfolio, I hope you enjoyed it.</p> 

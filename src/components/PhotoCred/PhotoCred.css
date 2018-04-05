@@ -14,8 +14,7 @@
 }
 
 @media (max-width: 500px) {
-  .photoCred {
-    text-align: center;
-    font-size: 0.9em;
+  .photoCredRoot {
+    display: none;
   }
 }

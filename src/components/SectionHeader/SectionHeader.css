@@ -7,3 +7,9 @@
   box-sizing: border-box;
   margin-bottom: 30px;
 }
+
+@media (max-width: 500px) {
+  .headerClass {
+    background-color: rgba(33, 33, 33, 0.8);
+  }
+}
