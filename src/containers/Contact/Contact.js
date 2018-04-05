@@ -17,8 +17,12 @@ class Contact extends Component {
           <div className={classes.thanksBlurb}>
             <p>Again, <span className={classes.thanks}>thank you</span> for visiting my portfolio, I hope you enjoyed it.</p> 
             <p>I welcome speaking with you about collaborating or joining your team. Contact me!</p>
-            <p><span className={classes.contact}>Phone:</span> (919) 268-0414</p>
-            <p><span className={classes.contact}>Email:</span> paulz92@gmail.com</p>
+            <div className={classes.contactContainer}>
+              <p className={classes.contact}>Phone</p>
+              <p>(919) 268-0414</p>
+              <p className={classes.contact}>Email</p>
+              <p>paulz92@gmail.com</p>
+            </div>
           </div>
           <div className={classes.social}>
             <h1>Social</h1>
