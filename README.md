@@ -1,6 +1,6 @@
 # Paul Zavattieri's Portfolio
 
-Welcome to the build site of my portfolio! Most recent build is deployed [here](https://paulz92.github.io/Portfolio/)
+Welcome to the build site of my portfolio! Most recent build is deployed [here](https://paulz92.github.io/Portfolio/).
 
 Improvements from my original portfolio:
 
@@ -15,8 +15,8 @@ Improvements from my original portfolio:
 
 Planned enhancements:
 
-- Enhanced styling for the project modals - target completion date of April 7, 2018
-- A more crisp picture of me - target completion the next time I look nice in front of a camera
+- Enhanced styling for the project modals
+- A more crisp photo
 
 ## Tech Stack
 
