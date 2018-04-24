@@ -7,7 +7,7 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader'
 
 class About extends Component {
   componentDidMount() {
-    window.scrollTo(0,0);
+    window.scrollTo(0,0)
   }
   
   render() {
@@ -33,9 +33,8 @@ class About extends Component {
                 development, decided to make a major career change, and couldn't be happier with my decision.
               </p>
               <p>
-                Please make sure to check out my projects. I'm currently seeking a Front End Development 
-                position, so if you like what you see and want to speak with me further, please don't hesitate 
-                to <Link to="/contact" className={classes.link + " " + classes.thanks}>reach out</Link>.
+                Please make sure to check out my projects. If you like what you see and want to speak with me
+                further, please don't hesitate to <Link to="/contact" className={classes.link + " " + classes.thanks}>reach out</Link>.
               </p>
             </div>
           </div>
